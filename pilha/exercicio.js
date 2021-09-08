@@ -24,6 +24,7 @@ function dec2Bin(decNumber) {
 
 /**
  * Converso de decimal para uma base escolhida (Binária, Octal, Hexadecimal)
+ * Bases: 2, 8, 16
  */
 
 function baseConverter(decNumber, base) {
