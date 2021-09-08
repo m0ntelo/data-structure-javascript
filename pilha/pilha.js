@@ -3,42 +3,42 @@
  */
 
 function Stack() {
-    let items = [];
-    
-    this.push = function(element) {
-        // adiciona um novo elemento a pilha 
-        items.push(element)
-    }
+  let items = [];
 
-    this.pop = function() {
-        // remove elemento no topo da pilha
-        return items.pop()
-    }
+  this.push = function (element) {
+    // adiciona um novo elemento a pilha 
+    items.push(element)
+  }
 
-    this.peek = function() {
-        // devolve o elemento que está no topo da pilha
-        return items[items.length - 1]
-    }
+  this.pop = function () {
+    // remove elemento no topo da pilha
+    return items.pop()
+  }
 
-    this.isEmpty = function() {
-        // informar se a pilha está vazia ou nao 
-        return items.length === 0
-    }
+  this.peek = function () {
+    // devolve o elemento que está no topo da pilha
+    return items[items.length - 1]
+  }
 
-    this.clear = function() {
-        // limpa a pilha
-        items = []
-    }
+  this.isEmpty = function () {
+    // informar se a pilha está vazia ou nao 
+    return items.length === 0
+  }
 
-    this.size = function() {
-        // informar o tamanho da pilha
-        return items.length
-    }
+  this.clear = function () {
+    // limpa a pilha
+    items = []
+  }
 
-    this.print = function() {
-        // imprime a pilha no console
-        console.log(items.toString())
-    }
+  this.size = function () {
+    // informar o tamanho da pilha
+    return items.length
+  }
+
+  this.print = function () {
+    // imprime a pilha no console
+    console.log(items.toString())
+  }
 }
 
 let pilha = new Stack();
